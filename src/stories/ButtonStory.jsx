@@ -1,0 +1,14 @@
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+
+import Button from '../04/Button';
+
+storiesOf('Button', module)
+    .addWithJSX('기본 설정', () => <Button>전송하기</Button>)
+    .addWithJSX('large', () => <Button large>전송하기</Button>)
+    .addWithJSX('xlarge', () => <Button xlarge>전송하기</Button>)
+    .addWithJSX('small', () => <Button small>전송하기</Button>)
+    .addWithJSX('xsmall', () => <Button xmall>전송하기</Button>)
+    .addWithJSX('primary', () => <Button primary>전송하기</Button>)
+    .addWithJSX('secondary', () => <Button secondary>전송하기</Button>)
+    .addWithJSX('primary와 large 함께 ', () => <Button primary large>전송하기</Button>);
